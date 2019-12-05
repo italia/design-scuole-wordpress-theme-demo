@@ -1,0 +1,462 @@
+/*!
+Theme Name: Design Scuole Italia
+Author: Marco Buttarini
+Description: Design Scuole Italia è il tema di WordPress per i siti delle Scuole Italiane. Rispetta le linee guida di design dell’Agenzia per l’Italia digitale rilasciare dal Team per la Trasformazione Digitale. Utilizza Bootstrap Italia.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+Text Domain: design_scuole_italia
+*/
+
+/** immagini e allineamenti wp **/
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+    max-width:100%;
+    height:auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+    max-width:100%;
+    height:auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+    max-width:100%;
+    height:auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+/****/
+
+.cat-filters .custom-control .custom-control-input .checked ~ .custom-control-label {
+    color: white;
+    background-color: #455b71; }
+.cat-filters .custom-control.custom-checkbox-primary .checked ~ .custom-control-label {
+    color: white;
+    background-color: #0073e6; }
+
+.cat-filters .custom-control.custom-checkbox-redbrown .checked ~ .custom-control-label {
+    color: white;
+    background-color: #D1344C; }
+.cat-filters .custom-control.custom-checkbox-greendark .checked ~ .custom-control-label {
+    color: white;
+    background-color: #0E8A5F; }
+.cat-filters .custom-control.custom-checkbox-purplelight .checked ~ .custom-control-label {
+    color: white;
+    background-color: #B21DD0; }
+.cat-filters .custom-control.custom-checkbox-bluelectric .checked ~ .custom-control-label {
+    color: white;
+    background-color: #0D00FF; }
+.cat-filters .custom-control.custom-checkbox-grey .checked ~ .custom-control-label {
+    color: white;
+    background-color: #455b71; }
+
+
+.location-content{
+    word-wrap:break-word;
+    max-width:70%
+}
+
+.main-content li {
+    font-family: Lora, Georgia, serif;
+}
+.card-body li{
+    font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
+}
+.single .article-wrapper>p>a{
+    text-decoration:underline;
+}
+.page .article-wrapper a{
+    color: #0073e6 ;
+    text-decoration:underline;
+}
+
+
+.article-title-small {
+    height: auto !important;
+    padding-bottom: 20px !important;
+    }
+
+.article-title-small .title-content{
+    padding-bottom:20px
+}
+/** footer widgets **/
+.footer-wrapper .searchform{
+    margin-bottom:20px;
+}
+
+.footer-wrapper .searchform label{
+    color:#fff;
+}
+.footer-wrapper .searchform  #searchsubmit{
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0 solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    background-color: #5c6f82;
+    width:100%;
+    margin-top:6px;
+}
+
+.footer-wrapper #wp-calendar{
+    width:100%;
+    border: solid 1px #5c6f82;
+
+}
+.footer-wrapper #wp-calendar td, .footer-wrapper #wp-calendar th{
+    text-align:center;
+    padding:3px 0px;
+}
+/** fine footer widgets **/
+
+/** tables **/
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+table,thead,tbody,tfoot,tr, td,th{
+    text-align: center;
+    margin: auto;
+    border:1px solid #dedede;
+    padding: 1rem;
+
+}
+table td{
+    font-family: Lora, Georgia, serif;
+}
+table td ul{
+    text-align:left;
+    font-family: Lora, Georgia, serif;
+}
+
+.table    { display: table;  }
+.tr       { display: table-row;  }
+.thead    { display: table-header-group }
+.tbody    { display: table-row-group }
+.tfoot    { display: table-footer-group }
+.col      { display: table-column }
+.colgroup { display: table-column-group }
+.td, .th   { display: table-cell; }
+.caption  { display: table-caption }
+
+.table,
+.thead,
+.tbody,
+.tfoot,
+.tr,
+.td,
+.th{
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+.table{
+    background: #fff;
+    margin: auto;
+    border:none;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.th{
+    font-weight: 700;
+    border:1px solid #dedede;
+&:nth-child(odd){
+     border-right:none;
+ }
+}
+.td{
+    font-weight: 300;
+    border:1px solid #dedede;
+    border-top:none;
+&:nth-child(odd){
+     border-right:none;
+ }
+}
+/** fine tables **/
+
+
+/** footer menu **/
+.footer-inline-menu {
+    display: flex;
+    font-weight: 600;
+    list-style: none;
+}
+
+.footer-inline-menu ul {
+    padding: 0;
+    margin: 0;
+}
+.footer-inline-menu ul li{
+    float:left;
+    padding:20px;
+}
+
+#menu-footer li {
+    margin-right: 20px;
+}
+@media (max-width: 767.98px) {
+    .footer-inline-menu {
+        display: inline;
+    }
+}
+/** amministrazione trasparente **/
+.ammtrasm-tableclass a{
+    text-decoration:none !important;
+}
+.ammtrasm-tableclass h3 a { text-decoration:none; cursor: default; }
+.ammtrasm-tableclass h3 {  border: 1px solid #eee; padding: 8px 10px; background: #FBFBFB;     color: #51748c;
+}
+.ammtrasm-tableclass ul li a { text-decoration: none; }
+
+.at-number { float: right;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 0.5em;
+    color: #51748c;
+    margin-top: 8px;
+}
+
+/** table bandi **/
+.table{
+    font-size: 14px;
+    word-break: break-word;
+    min-width:570px;
+    margin-bottom: 10px;
+}
+.single-avcp table{
+    margin-bottom:10px;
+    word-break: break-word;
+
+}
+
+.big-quote-wrapper{
+    overflow:hidden;
+}
+/* visore didattica */
+.label-didattica{
+    margin-top: -30px;
+}
+
+/***/
+
+@media (max-width: 991.98px){
+    .responsive-tabs-aside {
+        border-bottom: 1px solid #0a00cb !important;
+    }
+    .r-tabs .r-tabs-accordion-title {
+        border-top: 1px solid #0a00cb !important;
+
+    }
+}
+
+
+/** cal **/
+.home .mini-clndr{
+    padding: 10px 0px 0px 0px;
+    border: none;
+}
+
+
+/*** map ull ***/
+.section.section-map-full {
+    position: relative;
+    z-index: 0;
+    height: 500px;
+    display: flex;
+    align-items: center; }
+
+.section.section-map-full .map-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0; }
+
+@media (max-width: 991.98px) {
+
+    .section.section-map-full {
+        height: 240px;
+
+
+    }
+}
+
+/** hero **/
+.people-red-forms, .people-red-forms svg, .purple-oval-forms, .purple-oval-forms svg  {
+    height: 100% !important;
+
+}
+
+.section.bg-bluelectricgradient h1, .section.bg-bluelectricgradient .h1, .section.bg-bluelectricgradient h2, .section.bg-bluelectricgradient .h2, .section.bg-bluelectricgradient h3, .section.bg-bluelectricgradient .h3, .section.bg-bluelectricgradient p{
+    color:#fff;
+}
+/*  link generico post */
+.single .article-wrapper .col-lg-9 p a{
+    color: #0D00FF;
+}
+
+
+.single-servizio .article-wrapper .col-lg-9 p a, .single-indirizzo .article-wrapper .col-lg-9 p a{
+    color: #B21DD0;
+}
+
+/** footer **/
+.footer-text {
+    font-size:14px;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    padding-top:10px;
+}
+
+/** list card **/
+.cursorhand{
+    cursor:pointer;
+}
+
+.card .card-article-img:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+}
+/** link sezioni content **/
+
+.purplelight .wysiwig-text a{
+    color: #B21DD0;
+}
+
+.purplelight .wysiwig-text .btn {
+    color: #ffffff;
+}
+
+.bluelectric .wysiwig-text a{
+    color: #0D00FF;
+}
+
+.redbrown .wysiwig-text a{
+    color: #D1344C;
+}
+.greendark .wysiwig-text a{
+    color: #0E8A5F;
+}
+.grey .wysiwig-text a{
+    color: #455b71;
+}
+
+
+.article-wrapper .wysiwig-text p {
+    margin: 0 0 20px 0 !important;
+}
+
+@media (max-width: 767.98px){
+    .hero-title {
+        padding: 0px 0 0px 0 !important;
+    }
+}
