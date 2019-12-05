@@ -3,4 +3,6 @@
 
 ## Un sito per le scuole italiane
 
-Questo repo contiene una demo staticizzata del [tema WordPress per i siti internet delle **Scuole Italiane**](https://github.com/italia/design-scuole-wordpress-theme).
+Questo repo contiene una demo staticizzata del [tema WordPress per i siti internet delle **Scuole Italiane**](https://github.com/italia/design-scuole-wordpress-theme). Essa è visibile al seguente indirizzo:
+
+https://italia.github.io/design-scuole-wordpress-theme-demo/
